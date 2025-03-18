@@ -27,7 +27,6 @@ app.use(
       // Random Accept-Language
       const languages = ["en-US,en;q=0.9", "fr-FR,fr;q=0.9"];
       proxyReq.setHeader("Accept-Language", languages[Math.floor(Math.random() * languages.length)]);
-      proxyReq.setHeader("Accept-Encoding", "gzip, deflate, br");
       // Random User-Agent
       const userAgents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36",
